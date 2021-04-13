@@ -1,0 +1,14 @@
+{
+    "name": "azure/test",
+    "type": "test",
+    "require": {
+        "monolog/monolog": "^1.24",
+        "phpunit/php-timer": "^1.0.9"
+    },
+    "authors": [
+        {
+            "name": "Kendrick Dubuisson",
+            "email": "kedubuis@microsoft.com"
+        }
+    ]
+}
