@@ -1,14 +1,5 @@
 # PHP Composer sample on Azure
-This sample installs monolog & php-timer with composer. Set the App Setting "SCM_DO_BUILD_DURING_DEPLOYMENT" to "true" to build the composer dependencies during deployment
-
-Enable SCM_DO_BUILD_DURING_DEPLOYMENT with Azure CLI
-```
-az webapp config appsettings set --resource-group <group-name> --name <app-name> --settings SCM_DO_BUILD_DURING_DEPLOYMENT=true
-```
-Zip Deploy with Azure CLI
-```
-az webapp deployment source config-zip --resource-group <group-name> --name <app-name> --src clouddrive/<filename>.zip
-```
+This sample installs monolog & php-timer with composer.
 
 ## App Service Linux Deployment
 If you deploy your app using Git or zip deploy, the Oryx build automation steps through the following sequence:
@@ -23,5 +14,16 @@ Running composer & on Windows requires the additional files in your repository.
 - .deployment
 - deploy.sh
 - composer.phar
+
+ Set the App Setting "SCM_DO_BUILD_DURING_DEPLOYMENT" to "true" to build the composer dependencies during deployment
+
+Enable SCM_DO_BUILD_DURING_DEPLOYMENT with Azure CLI
+```
+az webapp config appsettings set --resource-group <group-name> --name <app-name> --settings SCM_DO_BUILD_DURING_DEPLOYMENT=true
+```
+Zip Deploy with Azure CLI
+```
+az webapp deployment source config-zip --resource-group <group-name> --name <app-name> --src clouddrive/<filename>.zip
+```
 
 Reference: https://docs.microsoft.com/en-us/azure/app-service/configure-language-php?pivots=platform-windows#run-composer
