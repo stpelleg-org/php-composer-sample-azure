@@ -1,8 +1,8 @@
 # PHP Composer sample on Azure
 This sample installs monolog & php-timer with composer.
 
-## App Service Linux Deployment
-> :warning: Remove the ".deployment" file with Linux deployments to avoid conflicting build scripts.
+## App Service Linux Deployment (Use Linux Branch)
+> :warning: Remove the ".deployment" file with Linux deployments to avoid conflicting build scripts. 
 
 If you deploy your app using zip deploy with "SCM_DO_BUILD_DURING_DEPLOYMENT" to "true", the Oryx build automation steps through the following sequence:
 Run custom script if specified by PRE_BUILD_SCRIPT_PATH.
