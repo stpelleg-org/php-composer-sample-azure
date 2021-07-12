@@ -56,5 +56,5 @@
           with:
             app-name: 'gha-test-php-7-linux'
             slot-name: 'production'
-            publish-profile: ${{ secrets.AzureAppService_PublishProfile_77266603db3e4a74a041971ab8d1b5b6 }}
+            publish-profile: ${{ secrets.AzureAppService_PublishProfile_043ecc32ad024a0983408a56a0daf195 }}
             package: .
