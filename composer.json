@@ -3,7 +3,7 @@
     "type": "test",
     "require": {
         "monolog/monolog": "^1.24",
-        "phpunit/php-timer": "^1.0.9"
+        "phpunit/php-timer": "^4.0.0"
     },
     "authors": [
         {
